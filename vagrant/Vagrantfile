@@ -1,0 +1,17 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.define "jenkins" do |jenkins|
+    jenkins.vm.box = "ubuntu/jammy64"
+    jenkins.vm.hostname = "jenkins"
+    jenkins.vm.network "private_network", ip: "182.0.0.10"
+
+    jenkins.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
+      vb.cpus = 2
+    end
+  end
+
+end
