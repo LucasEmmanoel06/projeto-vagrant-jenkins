@@ -2,8 +2,8 @@
 
 Duas VMs criadas com Vagrant a partir de um único Vagrantfile:
 
-- **jenkins** (182.0.0.10) — Jenkins + Node.js
-- **prod** (182.0.0.20) — Node.js, ambiente de produção
+- **jenkins** (182.0.0.10) Jenkins + Node.js
+- **prod** (182.0.0.20) Node.js, ambiente de produção
 
 ## Como rodar
 
