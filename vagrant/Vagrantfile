@@ -42,6 +42,8 @@ CONFIG
       vb.cpus = 1
     end
 
+    prod.vm.synced_folder "../app", "/vagrant/app"
+
     prod.vm.provision "shell", path: "scripts/setup-node.sh"
 
     prod.vm.provision "file", source: "keys/jenkins_prod_key.pub", destination: "/tmp/jenkins_prod_key.pub"
