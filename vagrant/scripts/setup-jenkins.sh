@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get update -y
-apt-get install -y openjdk-17-jdk openssh-server wget gnupg
+apt-get install -y openjdk-21-jdk openssh-server wget gnupg
 
 wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
